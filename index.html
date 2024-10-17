@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Pemrograman Web 1</title>
+</head>
+<body style="background-color: aquamarine;">
+    <form action="hasil.php" method="get" style="margin-left: 150px;">
+        <fieldset style="background-color: aliceblue; width: 65%; margin: 110px;" >
+            <img src="image/utb.png" width="400" style="float: right; margin-left: 20px;">
+            <Legend>Form Ketenangan Hati</Legend>
+            <h1>Silahkan Isi Data Diri Anda</h1>
+            <table>
+                    <tr>
+                        <td>Nama Lengkap</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama_lengkap" placeholder="Nama Lengkap"></td>  
+                    </tr>              
+                    <tr>
+                        <td>Nama Panggilan</td>
+                        <td>:</td>
+                        <td><input type="text" name="nama_panggilan" placeholder="Nama Panggilan"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><input type="email" name="email" placeholder="Masukkan Alamat Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <select name="jk">
+                                <option value="laki-laki">Laki-laki</option>
+                                <option value="perempuan">Perempuan</option>
+                            </select>
+                        </td>
+                    </tr>
+            </table>
+            <br>
+                <tr>
+                    <td>Fakultas</td><br>
+                    <td><input type="radio" name="fk" value="Industri Kreatif">Industri Kreatif</td><br>
+                    <td><input type="radio" name="fk" value="Ekonomi dan Bisnis">Ekonomi dan Bisnis</td>
+                </tr>
+                <br><br>
+                <tr>
+                    <td>Hobi</td><br>
+                    <td><input type="checkbox" name="hobi[]" value="badminton">Badminton</td>
+                    <td><input type="checkbox" name="hobi[]" value="volly">Volly</td>
+                    <td><input type="checkbox" name="hobi[]" value="main game">Main Game</td>
+                    <td><input type="checkbox" name="hobi[]" value="futsal">Futsal</td>
+                </tr>
+                <p>
+                    <input type="submit" value="SUBMIT" style="background-color: green;">
+                    <input type="reset" value="CANCEL" style="background-color: red;">
+                </p>
+        </fieldset>
+    </form>
+</body>
+</html>
